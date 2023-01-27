@@ -12,7 +12,6 @@ const Company = () => {
     const checkClick = (e) => {
       if (open && ref.current && !ref.current.contains(e.target)) {
         setOpen(false);
-        console.log(e.target);
       }
     };
 
@@ -22,8 +21,6 @@ const Company = () => {
       document.removeEventListener('mousedown', checkClick);
     };
   }, [open]);
-
-  console.log(open);
 
   return (
     <li ref={ref}>
