@@ -4,8 +4,10 @@
   background-color: var(--primary-color);
   color: #fff;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   padding: 10px 20px;
+  position: relative;
+  z-index: 999;
 }
 
 .flex_container {
@@ -135,6 +137,7 @@
   top: 64px;
   left: 0;
   padding: 12vh 18vw;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .modal > i {
@@ -142,4 +145,73 @@
   text-align: center;
   font-size: 33px;
   margin-left: 100%;
+  padding: 14px 13px 4px 13px;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+.modal > i:hover {
+  background-color: var(--tertiary-color);
+}
+
+.modal > h4 {
+  font-size: 33px;
+  margin-bottom: 60px;
+}
+
+.modal > button {
+  font-size: 17px;
+  padding: 16px 80px 16px 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-right: 40px;
+  background-color: var(--tertiary-color);
+}
+
+.modal > button:nth-of-type(2) {
+  background-color: transparent;
+}
+
+.modal > button:hover {
+  background-color: var(--tertiary-color);
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Products dropdown */
+.products_dropdown {
+  height: 250px;
+  width: 250px;
+  overflow-y: scroll;
+  font-size: 19px;
+  font-weight: 500;
+  color: #000;
+}
+.products_dropdown > ul > li {
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.products_dropdown > ul > li > span {
+  padding: 20px 10px 20px 15px;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  width: 100%;
+}
+.products_dropdown > ul > li > svg {
+  font-size: 28px;
+}
+.products_dropdown > ul > li:hover {
+  color: #000;
+  background-color: var(--tertiary-color);
+  border-radius: 0;
+  width: 100%;
 }
