@@ -1,0 +1,63 @@
+.business {
+  background: url('../../assets/business.png') center center/cover;
+
+  padding: 60px 0;
+}
+
+.business p {
+  margin: 33px 0 44px 0;
+}
+
+.saftey {
+  padding: 60px 0;
+}
+
+.saftey h3 {
+  margin-bottom: 40px;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+.saftey .flex > div {
+  width: 100%;
+}
+
+.saftey .flex > div > h4 {
+  margin-top: 20px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.saftey .flex > div > p {
+  margin: 20px 0 40px 0;
+  color: rgb(94, 94, 94);
+}
+
+.saftey img {
+  width: 100%;
+}
+
+.saftey .grid_3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.saftey .grid_3 .icon {
+  font-size: 28px;
+}
+
+.saftey .grid_3 h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.saftey .grid_3 p {
+  margin-bottom: 44px;
+  color: rgb(94, 94, 94);
+}

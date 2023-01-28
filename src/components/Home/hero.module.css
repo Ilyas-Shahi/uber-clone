@@ -1,0 +1,138 @@
+main {
+  padding: 60px 60px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.tabs_container {
+  background-color: #fff;
+  width: 600px;
+}
+
+.tabs_head {
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  height: 128px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  /* padding-top: 8px; */
+  position: relative;
+}
+
+.tabs_head::after {
+  content: '';
+  position: absolute;
+  width: 86px;
+  height: 4px;
+  bottom: 0;
+  left: 60px;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+.tabs_head:has(.tab.eat.active)::after {
+  left: 260px;
+}
+.tabs_head:has(.tab.ride.active)::after {
+  left: 460px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 60px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.tab > span {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.tabs_content {
+  padding: 50px 50px;
+}
+
+.drive_content p {
+  margin: 28px 0;
+}
+
+.eat_content > p {
+  padding: 36px 0;
+}
+
+.eat_content > .btns {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.ride_content > h1 {
+  margin-bottom: 40px;
+}
+
+.ride_content .inputs {
+  position: relative;
+}
+
+.ride_content input {
+  width: 100%;
+  background-color: var(--tertiary-color);
+  height: 60px;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 12px 50px;
+  margin-bottom: 10px;
+}
+
+.ride_content .inputs .toFrom {
+  background-color: #000;
+  height: 50px;
+  width: 1px;
+  position: absolute;
+  top: 30%;
+  left: 24px;
+}
+.ride_content .inputs .toFrom::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -3px;
+}
+.ride_content .inputs .toFrom::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid #000;
+  position: absolute;
+  bottom: -11px;
+  left: -3px;
+}
+
+.ride_content .pickup {
+  position: relative;
+}
+
+.ride_content .pickup .locationArrow {
+  color: #bababa;
+  font-size: 24px;
+  position: absolute;
+  top: 18px;
+  right: 22px;
+}
+
+.ride_content .buttons {
+  margin-top: 40px;
+}

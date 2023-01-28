@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Work+Sans:wght@100;200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Work+Sans:wght@100;200;400;500&display=swap');
 
 /*  --- CSS Variables --- */
 
@@ -13,11 +13,11 @@
   --primary-font: 'Work Sans', sans-serif;
   --secondary-font: 'Work Sans', sans-serif;
 
-  --h1-font-size: clamp(1.8rem, 5vw, 3.2rem);
+  --h1-font-size: clamp(1.8rem, 5vw, 3.3rem);
   --h2-font-size: clamp(1.6rem, 5vw, 3rem);
   --h3-font-size: clamp(1.25rem, 5vw, 2.6rem);
-  --h4-font-size: clamp(1rem, 5vw, 1.2rem);
-  --normal-font-size: clamp(0.85rem, 5vw, 1.1rem);
+  --h4-font-size: clamp(1rem, 5vw, 1.1rem);
+  --normal-font-size: clamp(0.85rem, 5vw, 1.06rem);
   --small-font-size: clamp(0.6rem, 5vw, 0.8rem);
   --big-font-size: clamp(2rem, 5vw, 4rem);
 }
@@ -38,7 +38,8 @@ html {
 body {
   font-family: var(--secondary-font);
   font-size: var(--normal-font-size);
-  font-weight: 200;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
 
 h1 {
@@ -90,38 +91,35 @@ input {
   display: inline-block;
   background-color: var(--primary-color);
   color: #fff;
-  padding: clamp(0.75rem, 5vw, 1rem) clamp(1.25rem, 5vw, 2rem);
+  padding: clamp(0.75rem, 5vw, 1rem) clamp(1rem, 5vw, 1.6rem);
   font-family: var(--primary-font);
-  font-size: var(--normal-font-size);
-  font-weight: 200;
-  border: 2px solid var(--primary-color);
-  border-radius: 0.25rem;
+  font-size: var(--h4-font-size);
+  font-weight: 500;
+  border-radius: 0.6rem;
   transition: 0.3s;
+  letter-spacing: -0.5px;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--primary-color);
-  color: var(--primary-color);
+  opacity: 0.9;
 }
 
 .btn-outline {
-  background-color: transparent;
+  background-color: var(--tertiary-color);
   color: var(--primary-color);
-  border: 2px solid var(--primary-color);
 }
 
 .btn-outline:hover,
 .btn-outline:focus {
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: rgb(232, 232, 232);
 }
 
 /*   --- Reuseable CSS Classes ---   */
 .container {
   width: 100%;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 

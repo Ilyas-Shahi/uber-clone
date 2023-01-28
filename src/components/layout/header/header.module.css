@@ -1,6 +1,7 @@
 .header {
   height: 64px;
   width: 100%;
+
   background-color: var(--primary-color);
   color: #fff;
   font-weight: 400;
@@ -14,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1300px !important;
 }
 
 .left_menu {
@@ -187,7 +189,7 @@
 
 /* Products dropdown */
 .products_dropdown {
-  height: 250px;
+  height: 300px;
   width: 250px;
   overflow-y: scroll;
   font-size: 19px;
