@@ -10,7 +10,6 @@ import {
 } from 'react-icons/ri';
 import { AiOutlineCar } from 'react-icons/ai';
 import { BiMoney, BiTrain } from 'react-icons/bi';
-import {} from 'react-icons/tb';
 import { MdOutlineWineBar } from 'react-icons/md';
 
 import styles from './header.module.css';

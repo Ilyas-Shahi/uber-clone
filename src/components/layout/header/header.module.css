@@ -67,6 +67,8 @@
 .company_dropdown {
   background-color: #fff;
   color: #919191;
+  font-size: 16px;
+  font-weight: normal;
   box-shadow: 3px 4px 21px 5px rgba(0, 0, 0, 0.09);
   border-radius: 8px;
   padding-bottom: 12px;
@@ -132,7 +134,7 @@
 /* ----> Language Modal */
 .modal {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 64px);
   color: #000;
   background-color: #fff;
@@ -140,13 +142,14 @@
   left: 0;
   padding: 12vh 18vw;
   animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  z-index: 50;
 }
 
 .modal > i {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   font-size: 33px;
-  margin-left: 100%;
+  margin-left: 96%;
   padding: 14px 13px 4px 13px;
   border-radius: 80px;
   cursor: pointer;
@@ -216,4 +219,85 @@
   background-color: var(--tertiary-color);
   border-radius: 0;
   width: 100%;
+}
+
+/* ====> RESPONSIVE STYLES */
+button.menu_btn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.menu_btn:hover {
+  background-color: #424242;
+}
+
+/* ----> Mobile Menu */
+.mobile_menu {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 64px);
+  color: #000;
+  background-color: #fff;
+  top: 64px;
+  left: 0;
+  padding: 5vw;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  z-index: 40;
+}
+
+.mobile_menu > ul > li {
+  font-size: 33px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.mobile_menu > span:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--tertiary-color);
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 16vh;
+}
+
+.mobile_menu > span:nth-child(3) {
+  display: flex;
+  gap: 8px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+@media (max-width: 1080px) {
+  .modal {
+    padding: 2vh 3vw;
+  }
+
+  .modal > i {
+    display: none;
+  }
+
+  .modal > button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 18px;
+    text-align: left;
+  }
+
+  .company_li {
+    justify-content: space-between;
+  }
+
+  .products_dropdown {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+  }
 }
