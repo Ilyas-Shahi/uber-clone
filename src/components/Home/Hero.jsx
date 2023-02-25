@@ -8,22 +8,26 @@ import bg2 from '../../assets/bg2.png';
 import bg3 from '../../assets/bg3.jpg';
 import { useState } from 'react';
 import UnderBtn from '../layout/UnderBtn';
+import useIsMobile from '../../useIsMobile';
 
 const Hero = () => {
   const [activeTab, setActiveTab] = useState(1);
+
+  const isMobile = useIsMobile();
 
   const toggleTab = (i) => {
     setActiveTab(i);
   };
 
+  const heroBgStyles = {
+    backgroundImage: `url(${
+      activeTab === 2 ? bg2 : activeTab === 3 ? bg3 : bg1
+    })`,
+    backgroundColor: 'lightgray',
+  };
+
   return (
-    <main
-      style={{
-        backgroundImage: `url(${
-          activeTab === 2 ? bg2 : activeTab === 3 ? bg3 : bg1
-        })`,
-      }}
-    >
+    <main style={!isMobile ? heroBgStyles : {}}>
       <div className="container">
         <div className={styles.tabs_container}>
           <div className={styles.tabs_head}>
@@ -33,7 +37,9 @@ const Hero = () => {
                 styles.drive
               } `}
             >
-              <TbAntennaBars5 />
+              <TbAntennaBars5
+                style={isMobile ? { width: '26px' } : { width: '30px' }}
+              />
               <span>Drive or deliver</span>
             </div>
             <div
@@ -42,7 +48,9 @@ const Hero = () => {
                 activeTab === 2 && styles.active
               }`}
             >
-              <TbToolsKitchen2 />
+              <TbToolsKitchen2
+                style={isMobile ? { width: '20px' } : { width: '25px' }}
+              />
               <span>Eat</span>
             </div>
             <div
@@ -51,7 +59,9 @@ const Hero = () => {
                 styles.ride
               }`}
             >
-              <AiOutlineCar />
+              <AiOutlineCar
+                style={isMobile ? { width: '20px' } : { width: '26px' }}
+              />
               <span>Ride</span>
             </div>
           </div>
@@ -64,7 +74,14 @@ const Hero = () => {
                   Drive on the platform with the largest network of active
                   riders.
                 </p>
-                <button className="btn" style={{ marginBottom: '40px' }}>
+                <button
+                  className="btn"
+                  style={
+                    isMobile
+                      ? { marginBottom: '24px' }
+                      : { marginBottom: '40px' }
+                  }
+                >
                   Sign up to drive
                 </button>
                 <UnderBtn>Learn more about driving and delivering</UnderBtn>
@@ -75,8 +92,13 @@ const Hero = () => {
               <div className={styles.eat_content}>
                 <h1>Discover delicious eats</h1>
                 <p>Order delivery from restaurants you love.</p>
-                <div className={styles.btns}>
-                  <button className="btn">Order now</button>
+                <div className={!isMobile && styles.btns}>
+                  <button
+                    className="btn"
+                    style={isMobile ? { marginBottom: '24px' } : {}}
+                  >
+                    Order now
+                  </button>
                   <UnderBtn>Own a restaurant? Partner with Uber Eats</UnderBtn>
                 </div>
               </div>
@@ -109,6 +131,14 @@ const Hero = () => {
             )}
           </div>
         </div>
+
+        {isMobile && (
+          <img
+            src={activeTab === 2 ? bg2 : activeTab === 3 ? bg3 : bg1}
+            alt=""
+            style={{ marginBottom: '-10px', width: '100%' }}
+          />
+        )}
       </div>
     </main>
   );

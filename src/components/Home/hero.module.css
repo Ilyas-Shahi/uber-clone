@@ -15,7 +15,6 @@ main {
   justify-content: space-between;
   height: 128px;
   border-bottom: 1px solid rgb(228, 228, 228);
-  /* padding-top: 8px; */
   position: relative;
 }
 
@@ -58,7 +57,7 @@ main {
 }
 
 .tabs_content {
-  padding: 50px 50px;
+  padding: 50px;
 }
 
 .drive_content p {
@@ -135,4 +134,40 @@ main {
 
 .ride_content .buttons {
   margin-top: 40px;
+}
+
+/* ====== RESPONSIVE STYLES */
+@media (max-width: 1080px) {
+  main {
+    padding: 0px;
+  }
+
+  .tabs_container {
+    background-color: #fff;
+    width: 100%;
+  }
+  .tabs_head {
+    background-color: white;
+    justify-content: start;
+  }
+  .tabs_head::after {
+    width: 76px;
+    left: 22px;
+  }
+  .tabs_head:has(.tab.eat.active)::after {
+    left: 144px;
+  }
+  .tabs_head:has(.tab.ride.active)::after {
+    left: 264px;
+  }
+
+  .tab {
+    width: 60px;
+    font-size: 30px;
+    margin: 0 30px;
+  }
+
+  .tabs_content {
+    padding: 24px;
+  }
 }

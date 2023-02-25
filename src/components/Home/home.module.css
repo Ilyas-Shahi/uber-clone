@@ -1,18 +1,18 @@
 .business {
   background: url('../../assets/business.png') center center/cover;
 
-  padding: 60px 0;
+  padding: 60px 40px;
 }
 
 .business p {
   margin: 33px 0 44px 0;
 }
 
-.saftey {
+.safety {
   padding: 60px 0;
 }
 
-.saftey h3 {
+.safety h3 {
   margin-bottom: 40px;
 }
 
@@ -21,43 +21,52 @@
   gap: 30px;
 }
 
-.saftey .flex > div {
+.safety .flex > div {
   width: 100%;
 }
 
-.saftey .flex > div > h4 {
+.safety .flex > div > h4 {
   margin-top: 20px;
   font-size: 19px;
   font-weight: 400;
 }
 
-.saftey .flex > div > p {
+.safety .flex > div > p {
   margin: 20px 0 40px 0;
   color: rgb(94, 94, 94);
 }
 
-.saftey img {
+.safety img {
   width: 100%;
 }
 
-.saftey .grid_3 {
+.safety .grid_3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 100px;
 }
 
-.saftey .grid_3 .icon {
+.safety .grid_3 .icon {
   font-size: 28px;
 }
 
-.saftey .grid_3 h4 {
+.safety .grid_3 h4 {
   font-size: 20px;
   font-weight: 500;
   margin: 16px 0;
 }
 
-.saftey .grid_3 p {
+.safety .grid_3 p {
   margin-bottom: 44px;
   color: rgb(94, 94, 94);
+}
+
+@media (max-width: 1080px) {
+  .business {
+    padding: 50px 24px 40px;
+  }
+  .business p {
+    margin: 20px 0 28px 0;
+  }
 }

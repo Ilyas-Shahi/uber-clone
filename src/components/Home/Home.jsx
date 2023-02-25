@@ -3,7 +3,7 @@ import Header from '../layout/header/Header';
 import Hero from './Hero';
 
 import styles from './home.module.css';
-import SafteySection from './SafteySection';
+import SafetySection from './SafetySection';
 
 const Home = () => {
   return (
@@ -14,12 +14,12 @@ const Home = () => {
       <div className={styles.business}>
         <div className="container">
           <h3>Uber for Business</h3>
-          <p>Transfrom the way your company move and feeds its people.</p>
+          <p>Transform the way your company move and feeds its people.</p>
           <button className="btn">See how</button>
         </div>
       </div>
 
-      <SafteySection />
+      <SafetySection />
 
       <Footer />
     </>

@@ -3,18 +3,18 @@ import { MdOutlineArticle } from 'react-icons/md';
 
 import styles from './home.module.css';
 
-import SafteyImg from '../../assets/Safety_Home_Img2x.png';
+import SafetyImg from '../../assets/Safety_Home_Img2x.png';
 import CitiesImg from '../../assets/Cities_Home_Img2x.png';
 import UnderBtn from '../layout/UnderBtn';
 
-const SafteySection = () => {
+const SafetySection = () => {
   return (
-    <div className={styles.saftey}>
+    <div className={styles.safety}>
       <div className="container">
         <h3>Focused on safety, wherever you go</h3>
         <div className={styles.flex}>
           <div>
-            <img src={SafteyImg} alt="" />
+            <img src={SafetyImg} alt="" />
             <h4>Our commitment to your safety</h4>
             <p>
               With every safety feature and every standard in our Community
@@ -42,8 +42,8 @@ const SafteySection = () => {
             <RiGroupLine className={styles.icon} />
             <h4>About us</h4>
             <p>
-              Find out how we started, what drives us, and how we’re reimagining
-              how the world moves.
+              Find out how we started, what drives us, and how we’re
+              re-imagining how the world moves.
             </p>
             <UnderBtn>Learn more about Uber</UnderBtn>
           </div>
@@ -70,4 +70,4 @@ const SafteySection = () => {
     </div>
   );
 };
-export default SafteySection;
+export default SafetySection;
