@@ -1,4 +1,5 @@
 import { HiArrowRight, HiLocationMarker } from 'react-icons/hi';
+import { VscGlobe } from 'react-icons/vsc';
 import {
   AiFillFacebook,
   AiFillLinkedin,
@@ -6,7 +7,6 @@ import {
   AiOutlineInstagram,
   AiOutlineTwitter,
 } from 'react-icons/ai';
-import { VscGlobe } from 'react-icons/vsc';
 
 import styles from './footer.module.css';
 

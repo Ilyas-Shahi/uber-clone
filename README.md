@@ -9,7 +9,17 @@ Check the [Live Site Here](https://uber-ilyas.netlify.app).
 - Built with React.
 - Deployed with Netlify.
 - Styled With CSS Modules.
+- Using React Icons.
+
+<br>
 
 #### Features
 
-- Tab
+- Tabs
+- Responsive
+- Dropdown Menu
+- Modal
+
+<br>
+
+Connect with me [LinkedIn](https://www.linkedin.com/in/ilyas-shahi/)

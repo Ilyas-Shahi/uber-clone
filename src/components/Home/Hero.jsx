@@ -1,14 +1,17 @@
+import { useState } from 'react';
+
 import { TbAntennaBars5, TbToolsKitchen2 } from 'react-icons/tb';
 import { TiLocationArrow } from 'react-icons/ti';
 import { AiOutlineCar } from 'react-icons/ai';
+
+import useIsMobile from '../../useIsMobile';
+import UnderBtn from '../layout/UnderBtn';
+
 import styles from './hero.module.css';
 
 import bg1 from '../../assets/bg1.jpg';
 import bg2 from '../../assets/bg2.png';
 import bg3 from '../../assets/bg3.jpg';
-import { useState } from 'react';
-import UnderBtn from '../layout/UnderBtn';
-import useIsMobile from '../../useIsMobile';
 
 const Hero = () => {
   const [activeTab, setActiveTab] = useState(1);

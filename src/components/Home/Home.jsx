@@ -1,9 +1,9 @@
-import Footer from '../layout/footer/Footer';
 import Header from '../layout/header/Header';
 import Hero from './Hero';
+import SafetySection from './SafetySection';
+import Footer from '../layout/footer/Footer';
 
 import styles from './home.module.css';
-import SafetySection from './SafetySection';
 
 const Home = () => {
   return (

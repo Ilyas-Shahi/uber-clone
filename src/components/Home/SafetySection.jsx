@@ -1,12 +1,13 @@
 import { RiGroupLine, RiHome4Line } from 'react-icons/ri';
 import { MdOutlineArticle } from 'react-icons/md';
 
+import useIsMobile from '../../useIsMobile';
+import UnderBtn from '../layout/UnderBtn';
+
 import styles from './home.module.css';
 
 import SafetyImg from '../../assets/Safety_Home_Img2x.png';
 import CitiesImg from '../../assets/Cities_Home_Img2x.png';
-import UnderBtn from '../layout/UnderBtn';
-import useIsMobile from '../../useIsMobile';
 
 const SafetySection = () => {
   const isMobile = useIsMobile();
