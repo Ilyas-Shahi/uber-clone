@@ -6,8 +6,11 @@ import styles from './home.module.css';
 import SafetyImg from '../../assets/Safety_Home_Img2x.png';
 import CitiesImg from '../../assets/Cities_Home_Img2x.png';
 import UnderBtn from '../layout/UnderBtn';
+import useIsMobile from '../../useIsMobile';
 
 const SafetySection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div className={styles.safety}>
       <div className="container">
@@ -23,6 +26,7 @@ const SafetySection = () => {
             </p>
             <div className={styles.flex}>
               <UnderBtn>Read about our Community Guidelines</UnderBtn>
+              {isMobile && <br />}
               <UnderBtn>See all safety features</UnderBtn>
             </div>
           </div>

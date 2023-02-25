@@ -9,7 +9,7 @@
 }
 
 .safety {
-  padding: 60px 0;
+  padding: 60px 40px;
 }
 
 .safety h3 {
@@ -68,5 +68,22 @@
   }
   .business p {
     margin: 20px 0 28px 0;
+  }
+
+  .safety {
+    padding: 40px 24px;
+  }
+
+  .safety .flex {
+    display: block;
+  }
+  .safety .flex > div {
+    margin-bottom: 36px;
+  }
+
+  .safety .grid_3 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 36px;
+    margin-top: 80px;
   }
 }
