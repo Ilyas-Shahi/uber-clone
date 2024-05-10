@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/uber-clone/static/css/main.a112d00c.css",
+    "main.js": "/uber-clone/static/js/main.46f9d5dc.js",
+    "static/media/bg2.png": "/uber-clone/static/media/bg2.5fda807ec8afb48a818d.png",
+    "static/media/business.png": "/uber-clone/static/media/business.b4dd686eaee9e154701a.png",
+    "static/media/Cities_Home_Img2x.png": "/uber-clone/static/media/Cities_Home_Img2x.27486856f8a72f91e1df.png",
+    "static/media/bg3.jpg": "/uber-clone/static/media/bg3.4161458aa853493d23bc.jpg",
+    "static/media/bg1.jpg": "/uber-clone/static/media/bg1.794cc69088774bbe8945.jpg",
+    "static/media/Safety_Home_Img2x.png": "/uber-clone/static/media/Safety_Home_Img2x.0f20830a68fe65fed2ce.png",
+    "static/media/app-store-google-4d63c31a3e.svg": "/uber-clone/static/media/app-store-google-4d63c31a3e.43f3f8288881192ba72c4e8713b04b09.svg",
+    "static/media/app-store-apple-f1f919205b.svg": "/uber-clone/static/media/app-store-apple-f1f919205b.3b2e07ad29c994da0829000195507af3.svg",
+    "index.html": "/uber-clone/index.html",
+    "static/media/cross-icon.svg": "/uber-clone/static/media/cross-icon.97c06b2c745e0a16901c06cef4742156.svg",
+    "static/media/menu-icon.svg": "/uber-clone/static/media/menu-icon.43c3cb4131a825f24d8f03d74d298174.svg",
+    "main.a112d00c.css.map": "/uber-clone/static/css/main.a112d00c.css.map",
+    "main.46f9d5dc.js.map": "/uber-clone/static/js/main.46f9d5dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a112d00c.css",
+    "static/js/main.46f9d5dc.js"
+  ]
+}
