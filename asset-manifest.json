@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uber-clone/static/css/main.a112d00c.css",
-    "main.js": "/uber-clone/static/js/main.341dcfcb.js",
+    "main.js": "/uber-clone/static/js/main.0f10b363.js",
     "static/media/bg2.png": "/uber-clone/static/media/bg2.5fda807ec8afb48a818d.png",
     "static/media/business.png": "/uber-clone/static/media/business.b4dd686eaee9e154701a.png",
     "static/media/Cities_Home_Img2x.png": "/uber-clone/static/media/Cities_Home_Img2x.27486856f8a72f91e1df.png",
@@ -14,10 +14,10 @@
     "static/media/cross-icon.svg": "/uber-clone/static/media/cross-icon.97c06b2c745e0a16901c06cef4742156.svg",
     "static/media/menu-icon.svg": "/uber-clone/static/media/menu-icon.43c3cb4131a825f24d8f03d74d298174.svg",
     "main.a112d00c.css.map": "/uber-clone/static/css/main.a112d00c.css.map",
-    "main.341dcfcb.js.map": "/uber-clone/static/js/main.341dcfcb.js.map"
+    "main.0f10b363.js.map": "/uber-clone/static/js/main.0f10b363.js.map"
   },
   "entrypoints": [
     "static/css/main.a112d00c.css",
-    "static/js/main.341dcfcb.js"
+    "static/js/main.0f10b363.js"
   ]
 }
