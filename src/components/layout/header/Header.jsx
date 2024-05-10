@@ -30,7 +30,9 @@ const Header = () => {
       <div className={`container ${styles.flex_container}`}>
         <div className={styles.left_menu}>
           <span className={styles.logo}>
-            <span className={styles.logo_u}>u</span>ber
+            <span className={styles.logo_u}>u</span>
+            <span>ber</span>
+            <span className={styles.logo_clone}>clone</span>
           </span>
 
           {!isMobile && (

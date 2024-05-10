@@ -2,6 +2,10 @@
 
 Check the [Live Site Here](https://uber-ilyas.netlify.app).
 
+### Disclaimer:
+
+This site is not associated with Uber. It is a clone built as a practice project. This site is static and will not ask for any information. Please get in contact before reporting it.
+
 <br>
 
 #### About the project
