@@ -140,7 +140,7 @@ const Footer = () => {
           </div>
 
           <div className={styles.copyright}>
-            <p>© 2023 Uber Technologies Inc.</p>
+            <p>Not associated with Uber Uber Technologies Inc.</p>
             <ul>
               <li>Privacy</li>
               <li>Accessibility</li>

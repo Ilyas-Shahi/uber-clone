@@ -1,6 +1,6 @@
 ## Clone of Uber's Homepage for a practice portfolio.
 
-Check the [Live Site Here](https://uber-ilyas.netlify.app).
+Check the [Live Site Here](https://ilyas-shahi.github.io/uber-clone).
 
 ### Disclaimer:
 
@@ -26,4 +26,4 @@ This site is not associated with Uber. It is a clone built as a practice project
 
 <br>
 
-Connect with me [LinkedIn](https://www.linkedin.com/in/ilyas-shahi/)
+Connect with me on [LinkedIn](https://www.linkedin.com/in/ilyas-shahi/)
